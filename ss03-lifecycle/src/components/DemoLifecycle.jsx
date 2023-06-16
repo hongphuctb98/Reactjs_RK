@@ -8,6 +8,11 @@ class DemoLifecycle extends Component {
   componentDidMount() {
     console.log("3  .component did mount");
   }
+
+  componentWillReceiveProps() {}
+  shouldComponentUpdate() {}
+  componentWillUpdate() {}
+  componentDidUpdate() {}
   render() {
     console.log("2. render");
     return <div>DemoLifecycle</div>;
