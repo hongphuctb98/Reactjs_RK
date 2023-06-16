@@ -7,6 +7,7 @@ import DemoForm3 from "./components/DemoForm3";
 import ContactForm from "./execution/ContactForm";
 import Form from "./execution/Form";
 import FormGender from "./execution/FormGender";
+import Baitap1 from "./execution/Baitap1";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
       {/* <DemoForm3 /> */}
       {/* <ContactForm /> */}
       {/* <Form /> */}
-      <FormGender />
+      {/* <FormGender /> */}
+      <Baitap1 />
     </div>
   );
 }
