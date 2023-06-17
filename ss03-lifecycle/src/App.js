@@ -10,6 +10,8 @@ import FormGender from "./execution/FormGender";
 import Baitap1 from "./execution/Baitap1";
 import FormValidate from "./execution/FormValidate";
 import Baitap2 from "./execution/Baitap2";
+import Baitap3 from "./execution/Baitap3";
+import Baitap4 from "./execution/Baitap4";
 
 function App() {
   return (
@@ -25,7 +27,9 @@ function App() {
       {/* <FormGender /> */}
       {/* <Baitap1 /> */}
       {/* <FormValidate /> */}
-      <Baitap2 />
+      {/* <Baitap2 /> */}
+      {/* <Baitap3 /> */}
+      <Baitap4 />
     </div>
   );
 }
