@@ -8,6 +8,8 @@ import ContactForm from "./execution/ContactForm";
 import Form from "./execution/Form";
 import FormGender from "./execution/FormGender";
 import Baitap1 from "./execution/Baitap1";
+import FormValidate from "./execution/FormValidate";
+import Baitap2 from "./execution/Baitap2";
 
 function App() {
   return (
@@ -21,7 +23,9 @@ function App() {
       {/* <ContactForm /> */}
       {/* <Form /> */}
       {/* <FormGender /> */}
-      <Baitap1 />
+      {/* <Baitap1 /> */}
+      {/* <FormValidate /> */}
+      <Baitap2 />
     </div>
   );
 }

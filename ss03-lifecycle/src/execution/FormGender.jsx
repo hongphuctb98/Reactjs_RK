@@ -7,11 +7,20 @@ class FormGender extends Component {
       selectedOption: "",
     };
   }
+  onValueChhange = (e) => {
+    this.setState({
+      selectedOption: e.target.value,
+    });
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+  };
 
   render() {
     return (
       <div>
-        <form action="">
+        <form action="" onSubmit={this.handleSubmit}>
           <div>
             <label htmlFor="">
               <input
@@ -23,7 +32,6 @@ class FormGender extends Component {
               Male
             </label>
           </div>
-
           <div>
             <label htmlFor="">
               <input
@@ -35,7 +43,6 @@ class FormGender extends Component {
               Female
             </label>
           </div>
-
           <div>
             <label htmlFor="">
               <input
@@ -47,6 +54,7 @@ class FormGender extends Component {
               Other
             </label>
           </div>
+          <p>Selected option is: {this.state.selectedOption}</p>
           <button type="submit">Submit</button>
         </form>
       </div>
