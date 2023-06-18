@@ -12,6 +12,7 @@ import FormValidate from "./execution/FormValidate";
 import Baitap2 from "./execution/Baitap2";
 import Baitap3 from "./execution/Baitap3";
 import Baitap4 from "./execution/Baitap4";
+import Baitap5 from "./execution/Baitap5";
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
       {/* <FormValidate /> */}
       {/* <Baitap2 /> */}
       {/* <Baitap3 /> */}
-      <Baitap4 />
+      {/* <Baitap4 /> */}
+      <Baitap5 />
     </div>
   );
 }
