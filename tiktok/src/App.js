@@ -8,81 +8,22 @@ const course = [
   { id: 2, name: "js" },
   { id: 3, name: "react" },
 ];
-const tabs = ["posts", "photos", "albums"];
 
 function App() {
-  // const [gift, setGift] = useState();
-  // const handleUpdate = () => {
-  //   setGift(gifts[Math.floor(Math.random() * gifts.length)]);
-  // };
-  // return (
-  //   <div className="App">
-  //     <h1>{gift || "Chua co phan thuong"}</h1>
-  //     <button onClick={handleUpdate}>Increase</button>
-  //   </div>
-  // );
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const handleSubmit = () => {
-  //   console.log({
-  //     name,
-  //     email,
-  //   });
-  // };
-
-  const [title, setTitle] = useState("");
-  const [posts, setPosts] = useState([]);
-  const [type, setType] = useState("posts");
-  const [show, setShow] = useState(false);
-
-  console.log(type);
+  const [countdown, setCountdown] = useState(180);
 
   useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/${type}`)
-      .then((res) => res.json())
-      .then((posts) => {
-        setPosts(posts);
-      });
-  }, [type]);
+    const timeId = setInterval(() => {
+      setCountdown((prevState) => prevState - 1);
+    }, 1000);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setShow(window.scrollY >= 200);
+    return () => {
+      clearTimeout(timeId);
     };
-    window.addEventListener("scroll", handleScroll);
   }, []);
-
   return (
     <div className="App">
-      {tabs.map((tab) => (
-        <button
-          style={
-            type === tab
-              ? { color: "#fff", backgroundColor: "#000" }
-              : { color: "#000", backgroundColor: "#fff" }
-          }
-          key={tab}
-          onClick={() => setType(tab)}
-        >
-          {tab}
-        </button>
-      ))}
-      <input
-        type="text"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-      ></input>
-      <ul>
-        {posts.map((posts) => (
-          <li key={posts.id}>{posts.title}</li>
-        ))}
-      </ul>
-
-      {show && (
-        <button style={{ position: "fixed", bottom: "10px", right: "10px" }}>
-          goto top
-        </button>
-      )}
+      <h1>{countdown}</h1>
     </div>
   );
 }
