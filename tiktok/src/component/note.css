@@ -1,0 +1,19 @@
+h1 {
+  background-color: #f1b710;
+  padding: 15px;
+}
+
+.card-input {
+  width: 400px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.btn-add {
+  width: 100px;
+  margin-left: auto;
+}
+
+.btn-del {
+  margin-left: auto;
+}

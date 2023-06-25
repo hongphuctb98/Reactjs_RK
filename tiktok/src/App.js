@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import NoteMain from "./component/NoteMain";
 
 const orders = [100, 200, 500];
 const gifts = ["cpu i9", "cpu i7", "cpu i5"];
@@ -22,8 +23,8 @@ function App() {
     };
   }, []);
   return (
-    <div className="App">
-      <h1>{countdown}</h1>
+    <div>
+      <NoteMain />
     </div>
   );
 }
