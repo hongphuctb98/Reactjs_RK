@@ -25,6 +25,7 @@ function App() {
   return (
     <div>
       <NoteMain />
+      <NoteMain></NoteMain>
     </div>
   );
 }
