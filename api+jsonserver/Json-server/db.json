@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "name": "Phuc",
+      "email": "zoro@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Manh",
+      "email": "zoro@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Cogi",
+      "email": "zoro@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "chihuahua",
+      "email": "chihuahua@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "zoro",
+      "email": "zoro@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "Kaido",
+      "email": "Kaido@gmail.com",
+      "id": 6
+    }
+  ]
+}
