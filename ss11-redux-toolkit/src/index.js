@@ -1,15 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import "bootstrap/dist/css/bootstrap.min.css";
 
-import { createStore } from "redux";
+import store from "./components/redux/store";
 import { Provider } from "react-redux";
-import { reducer } from "./redux/reducer";
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const store = createStore(reducer);
 root.render(
   <Provider store={store}>
     <App />
