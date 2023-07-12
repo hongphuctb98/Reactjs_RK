@@ -1,17 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+import axios from "axios";
 const todoSlice = createSlice({
   name: "todo",
-  initialState: [],
+  initialState: [
+    {
+      user: axios.get("http://localhost:6001/users"),
+    },
+  ],
   reducers: {
     addTodo: (state, action) => {
-      state.push(action.payload);
+      state[0].user.push(action.payload);
       return state;
     },
   },
 });
-
-console.log(todoSlice);
 
 export const { addTodo } = todoSlice.actions;
 
